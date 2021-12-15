@@ -36,7 +36,6 @@ class LoginActivity : AppCompatActivity() {
 
     private fun login() {
         val arr: ArrayList<User> = ArrayList()
-
         arr.add(User("test@test.com", "1234"))
         arr.add(User("t@gmail.com", "12345"))
         arr.add(User("b@test.com", "123456"))
