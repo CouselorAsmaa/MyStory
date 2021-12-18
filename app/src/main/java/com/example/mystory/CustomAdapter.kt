@@ -32,7 +32,7 @@ class CustomAdapter (val storiesList:ArrayList<Story>,val context: Context)
         holder.itemView.setOnClickListener {
             val i = Intent(context,StoryDetailsActivity::class.java)
             i.putExtra("title",story.title)
-            i.putExtra("desc",story.desciption)
+            i.putExtra("desc",story.desciprtion)
             context.startActivity(i)
         }
     }

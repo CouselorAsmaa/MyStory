@@ -100,14 +100,13 @@ class MainActivity : AppCompatActivity() {
     private fun displayStories(){
         val storiesArray = ArrayList<Story>()
         storiesArray.add(
-            Story(  "First Story"
-                ,"this is subtitle","Welcome to my story"))
+            Story(getString(R.string.story1_title),getString(R.string.story1_subtitle),getString(R.string.story1_desc)))
         storiesArray.add(
             Story("Second Story"
-                ,"this is second subtitle","Welcome to my story"))
+                ,"this is second subtitle","In this bootcamp I learnt kotlin"))
         storiesArray.add(
             Story("Third Story"
-                ,"this is third subtitle","Welcome to my story"))
+                ,"this is third subtitle","In this bootcamp I learnt kotlin"))
 
         val customAdapter = CustomAdapter(storiesArray,this)
         recyclerView?.adapter = customAdapter
